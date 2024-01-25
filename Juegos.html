@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Página de Video Juegos</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- Navegación -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid ">
+              <a class="navbar-brand grande" href="Inicio.html"> <img src="svg/Logo.svg" alt="Logo" class="logo">WorldGames</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Consolas.html">Consolas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Juegos
+                    </a>
+                    <!-- deben de funcionar enlaces -->
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                      <li><a class="dropdown-item" href="#personajes">Personajes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+            <!-- Pagina de inicio -->
+    <main class="container">
+        <div class="d-flex align-items-center justify-content-center">
+            <img src="img/personajes-de-mario-supermario.jpg" class="img-fluid consolas" alt="Consolas">
+            <h1 class="position-absolute text-center text-white bg-dark  bg-opacity-75 rounded-3 p-4">Importante de WorldGames</h1>
+        </div>
+        
+            <h2 id="noticias">Noticias</h2>
+            <div class="clearfix">
+                <img src="img/Granturismo.png" class="col-md-6 float-md-start mb-3 ms-md-3 me-2 relevante" alt="Granturismo">
+                <h3> La actualización 1.42 de Gran Turismo 7 llega hoy con menús de cafetería y coches nuevos</h3>
+                <p> La última actualización incluye dos menús de cafetería adicionales, eventos de carrera nuevos y mucho más.
+                    <br> Con el siguiente código <b>xje07</b> tendra un descuento en el juego directamente desde la página de Play Station.
+                </p>
+                <button type="button" class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPages">Canjear Descuento</button>
+            </div>
+            <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPages" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Página para canjear código</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- pagina de intere -->
+            <div class="offcanvas-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="https://www.playstation.com/es-cr/" target="_blank">Play Station</a></li>
+              </ul>
+              <img src="img/gran-turismo-7.png" alt="" class="canva">
+              <img src="img/granturismo-7.jpg" alt="" class="canva">
+              <img src="img/granturismo7.jpg" alt="" class="canva">
+
+            </div>
+          </div>
+          <div class="clearfix">
+            <img src="img/women-fifa 23.jpg" class="col-md-6 float-md-end mb-3 ms-md-3 me-2 relevante" alt="Granturismo">
+            <h3>Presentamos el fútbol femenino de clubes FIFA 23</h3>
+            <p> Juega con clubes femeninos por primera vez en la historia de EA SPORTS
+                FIFA con la Barclays Women's Super League, Division 1 Arkema y la fase
+                eliminatoria de la UEFA Women's Champions League, que llegará a FIFA 23. 
+                <br> Con el siguiente código <b>tx46l</b> tendra un descuento en el juego directamente desde la página de EA SPORTS.
+            </p>
+            <button type="button" class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPages1">Canjear Descuento</button>
+        </div>
+        <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPages1" aria-labelledby="offcanvasExampleLabel1">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel1">Página para canjear código</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- pagina de intere -->
+        <div class="offcanvas-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="https://www.ea.com/" target="_blank">EA SPORTS</a></li>
+          </ul>
+          <img src="img/fifa.jpg" alt="" class="canva">
+              <img src="img/fifa-women.jpg" alt="" class="canva">
+              <img src="img/fifa-23.jpg" alt="" class="canva">
+        </div>
+      </div>
+          
+    </main>
+    <footer class="container-fluid ">
+        <div class="pie"> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Consolas.html">Consolas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Juegos
+                    </a>
+                    <!-- deben de funcionar enlaces -->
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                      <li><a class="dropdown-item" href="#personajes">Personajes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <a href="Inicio.html"><img src="svg/Logo.svg" alt="Logo" class="logo">WorldGames</a>
+        </div>
+        <h2 class="text-center">Luis Enrique Zuñiga Aguirre</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
