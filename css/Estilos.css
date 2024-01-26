@@ -70,7 +70,8 @@ footer{
     background: #007bb5;
   }
 .consolas{
-    border-radius: 30px;
+    border-radius: 30px; 
+    width: 100%;
   }
   .galeria{
     width: 100%;
